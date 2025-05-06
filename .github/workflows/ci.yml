@@ -67,7 +67,6 @@ jobs:
         run: ./gradlew assembleRelease --no-daemon
 
       - name: Upload Apk
-        if: github.repository == 'topminipie/twoyi'
         uses: actions/upload-artifact@v4
         with:
           name: apk
